@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{{ partial "head.html" . }}
+
+<body>
+  <div id="site-wrapper">
+    {{ partial "header.html" . }}
+
+    {{ $.Scratch.Set "current" .Permalink }}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="sidebar">
+            <div class="side-menu">
+              <h4>IJ Documentation</h4>
+
+              <ul>
+                {{ range sort $.Site.Pages "Params.index" }}
+                  {{ if .Params.index }}
+                    <li><a href="{{ .Permalink }}" {{ if eq .Permalink ($.Scratch.Get "current") }}class="current"{{ end }}>{{ .Title }}</a></li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <article class="{{ .Type }}">
+            <section class="article-content">
+              {{ .Content }}
+            </section>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,14 @@
+languageCode = 'en-us'
+baseurl = 'https://ij-build.dev'
+title = 'IJ'
+disableKinds = ['taxonomy', 'taxonomyTerm', 'RSS']
+
+[params]
+  author = 'Eric Fritz'
+  dateformat = '01/02/2006'
+  index_page = '/landing'
+  resources_root = 'https://assets.ij-build.dev'
+  categories = ['core', 'libraries', 'frameworks']
+
+[params.highlight]
+  languages = ['yaml']

@@ -1,0 +1,187 @@
+/* Sticky Footer
+ * --------------------------------------------*/
+
+html, body {
+  height: 100%;
+}
+
+#site-wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
+
+footer {
+  height: 50px;
+  padding-top: 15px;
+  background-color: rgb(255, 255, 255, 0.75);
+  border-top: 1px solid #dee2e6;
+}
+
+/* Bootstrap Overrides
+ * --------------------------------------------*/
+
+body {
+  margin: 0;
+	font-family: roboto, Arial, sans-serif, -apple-system;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+pre {
+  border: 0;
+  background-color: #1e1e1e;
+}
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+table td:nth-child(1) {
+  width: 22%;
+}
+
+table td:nth-child(2) {
+  width: 14%;
+}
+
+table td:nth-child(3) {
+  width: 14%;
+}
+
+table th {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table th,
+table td {
+  padding: .75rem;
+}
+
+table tbody tr:nth-of-type(2n+1) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar
+ * --------------------------------------------*/
+
+.navbar-nav > li > a:hover {
+  color: #000;
+  background-color: inherit;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255, 0.75);
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+  padding: 5px;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-default .navbar-toggle {
+  border-color: #000000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  color: #000000;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+
+/* Side Menu
+ * --------------------------------------------*/
+
+.side-menu h4 {
+	font-weight: 700;
+}
+
+.side-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+.side-menu ul li {
+	margin: 0;
+	padding: 4px 0
+}
+
+.side-menu ul li a.current::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: -10px;
+  padding-right: 5px;
+}
+
+.side-menu ul li a {
+	color: #212529
+}
+
+.side-menu ul li a:hover {
+	color: #1de9b6
+}
+
+/* Doc Pages
+ * --------------------------------------------*/
+
+.docs h1 {
+  margin-top: 10px;
+}
+
+/* Landing Page
+ * --------------------------------------------*/
+
+.bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0;
+  background-color: inherit;
+}
+
+.jumbotron p {
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 +1px black, +1px 0 black, 0 -1px black;
+}
+
+.jumbotron .container {
+  margin-bottom: 10px 0;
+}
+
+.jumbotron .btn {
+  margin: 10px;
+}
+
+.outer-div {
+  display: inline-flex;
+  height: calc((100vh - 160px) * 2 / 3);
+  color: white;
+}
+
+.inner-div {
+  margin: auto 5px;
+}
+
+.mr {
+  margin-right: 5px;
+}

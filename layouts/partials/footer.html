@@ -1,0 +1,29 @@
+<footer class="text-center">
+  <div class="container">
+    <small class="copyright">
+      &copy; Eric Fritz 2019
+
+      {{ with (.Scratch.Get "attribution") }}
+        &middot;
+        <a href="https://commons.wikimedia.org/wiki/File:KeizersgrachtReguliersgrachtAmsterdam.jpg" target="_blank" class="navigate">
+          Photo by <em>Massimo Catarinella</em>
+        </a>
+        used under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>.
+      {{ end }}
+    </small>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+
+{{ range .Site.Params.highlight.languages }}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/{{ . }}.min.js"></script>
+{{ end }}
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    hljs.initHighlightingOnLoad();
+  });
+</script>
