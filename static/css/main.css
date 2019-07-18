@@ -7,15 +7,16 @@ html, body {
 
 #site-wrapper {
   min-height: 100%;
-  margin-bottom: -50px;
-  padding-bottom: 50px;
+  margin-bottom: -80.5px;
+  padding-bottom: 100px;
 }
 
 footer {
-  height: 50px;
-  padding-top: 15px;
+  height: 80.5px;
+  padding-top: 30px;
   background-color: rgb(255, 255, 255, 0.75);
-  border-top: 1px solid #dee2e6;
+  background-color: #1b1c1d;
+  color: rgba(255,255,255,.9);
 }
 
 /* Bootstrap Overrides
@@ -68,14 +69,13 @@ table tbody tr:nth-of-type(2n+1) {
 /* Navbar
  * --------------------------------------------*/
 
-.navbar-nav > li > a:hover {
-  color: #000;
-  background-color: inherit;
-}
-
 .navbar {
   background-color: rgb(255, 255, 255, 0.75);
   border-bottom: 1px solid #dee2e6;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  height: 47.7px;
+  min-height: 47.7px;
 }
 
 .navbar-brand {
@@ -83,10 +83,15 @@ table tbody tr:nth-of-type(2n+1) {
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 35px;
 }
 .navbar-default .navbar-toggle {
   border-color: #000000;
+}
+
+.navbar-nav > li > a:hover {
+  color: #000;
+  background-color: inherit;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
